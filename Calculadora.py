@@ -14,7 +14,7 @@ def calcular_tempo_necessario():
         resultado_label.config(text=f"Tempo necessário: {tempo_necessario:.2f} meses", fg="#4CAF50")
 
         historico_text.config(state=tk.NORMAL)
-        historico_text.insert(tk.END, f"Meta: R${meta_financeira:.2f}\nTempo necessário: {tempo_necessario:.2f} meses\n\n")
+        historico_text.insert(tk.END, f"Meta: R${meta_financeira:.2f}\nEconomia mensal: R${economia_mensal:.2f}\nTempo necessário: {tempo_necessario:.2f} meses\n\n")
         historico_text.config(state=tk.DISABLED)
 
     except ValueError:
